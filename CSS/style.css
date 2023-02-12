@@ -34,7 +34,6 @@ p{
     background-attachment:fixed;
     background-size: cover;
 }
-
 .titulos{
     font-size: 2rem;
     margin: 0.2rem;
@@ -52,6 +51,12 @@ a{
 
 /* Modificaciones Header */
 
+.contenedor-logo-titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
 h1{
     font-size: 5rem;
     display: inline-block;
@@ -65,18 +70,7 @@ h1{
     border-color: #aacc5aef;
     padding: 10px;
     margin: 10px;
-    text-align: center;
 }
-
-nav{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-header ul li{
-    display: inline-block;
-}
-
 header nav ul li a{
     font-size: 2rem;
     font-weight: 700;
@@ -85,12 +79,36 @@ header nav ul li a{
 }
 
 .boton-nav{
-    font-size: 2rem;
+    font-size: 1rem;
     margin: 0.5rem;
     background-color: #aacc5aef;
     box-shadow: 0 0 3px 3px white;
     border-radius: 3rem;
 }
+.boton-nav:hover{
+    color: green;
+    background-color: transparent;
+}
+
+.boton-nav-desplegable{
+    margin: 0.5rem;
+    background-color: #aacc5aef;
+    box-shadow: 0 0 3px 3px white;
+    border-radius: 3rem;
+    padding: 1rem;
+}
+.boton-nav-desplegado{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.boton-nav-desplegado:hover{
+    color:white;
+    background-color:#e63228b0;
+    border-radius: 2rem;
+}
+
 
 /* Modificaciones Main */
 
@@ -225,5 +243,3 @@ span{
     display: flex;
     justify-content: space-evenly;
 }
-
-
