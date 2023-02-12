@@ -34,11 +34,12 @@ p{
     background-attachment:fixed;
     background-size: cover;
 }
+
 .titulos{
     font-size: 2rem;
     margin: 0.2rem;
     background-color: #e63228b0;
-    box-shadow: 0 0 3px 3px white;
+    box-shadow: 0 0 3px 3px #aacc5aef;
     border-radius: 3rem;
     color: white;
     text-align: center;
@@ -50,6 +51,11 @@ a{
 } 
 
 /* Modificaciones Header */
+
+.logo-institucional{
+    width: 100px;
+    height: 100px;
+}
 
 .contenedor-logo-titulo{
     display: flex;
@@ -71,6 +77,7 @@ h1{
     padding: 10px;
     margin: 10px;
 }
+
 header nav ul li a{
     font-size: 2rem;
     font-weight: 700;
@@ -85,6 +92,7 @@ header nav ul li a{
     box-shadow: 0 0 3px 3px white;
     border-radius: 3rem;
 }
+
 .boton-nav:hover{
     color: green;
     background-color: transparent;
@@ -97,6 +105,7 @@ header nav ul li a{
     border-radius: 3rem;
     padding: 1rem;
 }
+
 .boton-nav-desplegado{
     color: white;
     font-size: 2rem;
@@ -109,26 +118,44 @@ header nav ul li a{
     border-radius: 2rem;
 }
 
-
 /* Modificaciones Main */
 
-.contenedor{
-    display: flex;
-    justify-content: space-evenly
+.propuesta{
+    margin-top: 3rem;
+    background-color:#e632289f;
+    margin: 3 1 3 1rem;
+    padding: 1rem;
+    border-radius: 3rem;
+    box-shadow: 0 0 10px 10px #aacc5aef;
 }
 
-.propuesta{
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.7);
-    margin: 1rem;
-    padding: 1rem;
-    border: solid 0.3rem #aacc5aef;
-    border-radius: 1rem;
-    text-align: center;
+.imagen-propuesta{
+    width:100%;
+    height:100%;
+    border: 1rem;
+    border-radius: 2rem;
+    border: 0.5rem solid;
+    border-color: #aacc5aef;
+}
+
+.titulo-propuesta{
+    overflow: hidden;
+    position: relative;
+}
+
+.titulo-propuesta h2{
+    font-size: 3rem;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(168, 198, 93, 0.7);
 }
 
 .video{
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    width: 70%;
     background-color: rgba(255, 255, 255, 0.7);
     margin: 1rem;
     padding: 1rem;
@@ -136,10 +163,24 @@ header nav ul li a{
     border-radius: 1rem;
 }
 
+.video p{
+    margin-left: rem;
+    font-size:3.5rem;
+    font-family:'Dancing Script', cursive;
+    font-weight:700;
+    text-align: center;
+}
+
+.centrar{
+    display:flex;
+    justify-content: center;
+}
+
 .noticias{
+    text-align: center;
+    width: 50%;
     background-color: rgba(255, 255, 255, 0.7);
-    height: 34rem;
-    width: 20rem;
+    height: 35rem;
     padding: 1rem;
     margin: 1rem;
     border: 1px solid #ddd;
@@ -148,51 +189,91 @@ header nav ul li a{
     border-radius: 1rem;
 }
 
+.info-extra{
+    display: flex;
+}
+
 /* Modificaciones Footer */
 
 #footer{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     background-color: #e63228b0;
     border-radius: 2rem;
     box-shadow: 0 0 10px 10px #aacc5aef;
     border-color: #aacc5aef;
 }
 
-.contacto{
+.contactoI{
+    width: 45%;
     padding: 2rem;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
 }
 
-.logos{
-    display: inline-block;
-    padding: 1rem;
+.contactoII{
+    display: flex;
+    justify-content: space-around;
 }
 
-.redes{
-    padding: 2rem;
-    display: inline-block;
-}
-
-.ubicacion{
-    float: right;
-    margin: 5rem 2rem;
-}
-
-div svg{
-    width: 4rem;
-    height: 4rem;
+.logo-contactoI{
     color: #aacc5aef;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.7rem;
 }
+
+.telefonos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-contactoII{
+    color: #aacc5aef;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 0.2rem;
+}
+
+.redesI{
+    width: 15%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.redesII{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 
 .texto-pie{
     font-size: 1.5rem;
-    margin: 0.5rem;
-    background-color: #e63228b0;
-    box-shadow: 0 0 3px 3px #aacc5aef;
-    border-radius: 3rem;
     color: white;
+}
+
+.logos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 0.2rem #aacc5aef;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.ubicacion{
+    width: 45%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.ubicacion h5{
+    margin-top: 2rem;
 }
 
 /********** Modificando Pages **********/
