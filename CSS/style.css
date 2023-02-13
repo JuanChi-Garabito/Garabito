@@ -271,7 +271,6 @@ header nav ul li a{
     justify-content: space-around;
 }
 
-
 .texto-pie{
     font-size: 1.5rem;
     color: white;
@@ -317,12 +316,11 @@ header nav ul li a{
 }
 
 .imagenes{
-    margin: 2rem;
+    margin-bottom: 2rem;
     padding: 1rem;
     border-radius: 1rem;
     background-color: rgba(255, 255, 255, 0.3);
     border: double 1rem #aacc5aef;
-    text-align: center;
 }
 
 .negrita-form{
@@ -346,6 +344,19 @@ span{
     height: 15rem;
     border-radius: 1rem;
     margin: 0.9rem;
+}
+
+.imagenI {
+    width: 20rem;
+    height: 15rem;
+    border-radius: 1rem;
+    margin: 0.9rem;
+}
+
+.imagenI:hover{
+    scale: 2.5;
+    transition: 1.5s;
+    transition-delay: 0.3s;
 }
 
 .tabla{
