@@ -250,7 +250,6 @@ header nav ul li a{
 .video-noticias{
     width: 40rem;
     height: 30rem;
-    jALIt: center;
 }
 
 /* Modificaciones Footer */
@@ -383,6 +382,8 @@ header nav ul li a{
 }
 
 .imagenes{
+    display: flex;
+    justify-content: space-around;
     margin-bottom: 2rem;
     padding: 1rem;
     border-radius: 1rem;
@@ -407,10 +408,15 @@ span{
     }
 
 .imagen {
-    width: 20rem;
-    height: 15rem;
+    width: 15rem;
+    height: 10rem;
     border-radius: 1rem;
     margin: 0.9rem;
+}
+
+@media screen and (max-width: 1280px) {
+    .imagen {width: 10rem;
+            height: 5rem;}
 }
 
 .imagenI {
