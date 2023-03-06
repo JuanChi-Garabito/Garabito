@@ -1,0 +1,15 @@
+@mixin disposicion($jf){
+    display: flex;
+    justify-content: $jf;
+}
+
+@mixin bg-br($bg, $br){
+    background-color: $bg;
+    border-radius: $br;
+}
+
+@mixin padd-marg($p, $m){
+    padding: $p;
+    margin: $m;
+    }
+

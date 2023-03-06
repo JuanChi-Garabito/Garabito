@@ -1,0 +1,26 @@
+
+.imagenes {
+	@include disposicion (space-between);
+	margin-bottom: 2rem;
+	padding: 1rem;
+    @include bg-br ($background-color_5,1rem);
+	border: double 1rem $color_4;
+    .imagenI {
+        width: 20rem;
+        height: 15rem;
+        border-radius: 1rem;
+        margin: 0.9rem;
+        &:hover {
+            scale: 2;
+            transition: 1.5s;
+            transition-delay: 0.3s;
+        }
+    }
+    
+}
+.imagen {
+	width: 15rem;
+	height: 10rem;
+	border-radius: 1rem;
+	margin: 0.9rem;
+}

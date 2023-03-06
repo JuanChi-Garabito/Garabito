@@ -1,0 +1,22 @@
+/*Modificaciones Video Presentación*/
+
+.video {
+	display: flex;
+	align-items: center;
+	width: 70%;
+	@include bg-br ($background-color_4, 1rem);
+	@include padd-marg (1rem, 1rem);
+	border: solid 0.3rem $color_4;
+    .video-institucional {
+        width: 40rem;
+        height: 30rem;
+    }
+	p {
+		margin-left: rem;
+		font-size: 3.5rem;
+		font-family: $font-family_1;
+		font-weight: 700;
+		text-align: center;
+	}
+}
+

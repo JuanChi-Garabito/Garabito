@@ -1,0 +1,11 @@
+/*Modificaciones Títulos*/
+
+.titulos{
+	font-size: 1.5rem;
+    @extend %title;
+}
+
+.titulosII{
+	font-size: 2.5rem;
+	@extend %title;
+}

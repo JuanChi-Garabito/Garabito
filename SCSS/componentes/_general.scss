@@ -1,0 +1,44 @@
+/*Modificaciones Generales*/
+
+.textos {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: $color_5;
+}
+#body {
+	font-family: $font-family_2;
+	background-image: url("../assets/img/fondo.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+a {
+	text-decoration: none;
+	color: $color_5;
+}
+.centrar {
+	@include disposicion (center);
+}
+.textosII {
+	font-family: $font-family_1;
+	font-size: 2rem;
+}
+.recuadro {
+	@include padd-marg (00.5rem, 1rem);
+	@include bg-br ($background-color_4, 1rem);
+	border: double 1rem $color_4;
+}
+.negrita-form {
+	font-size: 1.5rem;
+}
+.negrita-form2 {
+	font-size: 1rem;
+}
+span {
+	font-size: rem;
+	@include bg-br ($color_4, 2rem);
+	color: $color_5;
+	box-shadow: 0 0 3px 3px $color_1;
+}
+.tabla {
+	@include disposicion (center);
+}
