@@ -6,7 +6,7 @@
 	color: $color_5;
 }
 #body {
-	font-family: $font-family_2;
+	font-family: $font-family_1;
 	background-image: url("../assets/img/fondo.jpg");
 	background-attachment: fixed;
 	background-size: cover;
@@ -23,7 +23,7 @@ a {
 	font-size: 2rem;
 }
 .recuadro {
-	@include padd-marg (00.5rem, 1rem);
+	@include padd-marg (0.5rem, 1rem);
 	@include bg-br ($background-color_4, 1rem);
 	border: double 1rem $color_4;
 }
@@ -43,3 +43,8 @@ span {
 .tabla {
 	@include disposicion (center);
 }
+
+.propuesta .row .titulo-propuesta h2{
+	@include padd-marg (0.5rem, 0.1rem);
+}
+

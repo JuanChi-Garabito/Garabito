@@ -58,7 +58,7 @@ a {
 }
 
 .textosII {
-  font-family: "Dancing Script", cursive;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2rem;
 }
 
@@ -90,6 +90,11 @@ span {
 .tabla {
   display: flex;
   justify-content: center;
+}
+
+.propuesta .row .titulo-propuesta h2 {
+  padding: 0.5rem;
+  margin: 0.1rem;
 }
 
 /*Modificaciones Títulos*/
@@ -178,8 +183,8 @@ header nav ul li a {
 }
 .video p {
   margin-left: rem;
-  font-size: 3.5rem;
-  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 700;
   text-align: center;
 }
@@ -432,12 +437,6 @@ footer {
   }
 }
 @media screen and (max-width: 870px) {
-  .video-institucional {
-    width: 30rem;
-    height: 20rem;
-  }
-}
-@media screen and (max-width: 870px) {
   #footer {
     display: flex;
     flex-direction: column;
@@ -452,6 +451,10 @@ footer {
   }
   .logos {
     margin: 0rem 2rem 0rem 2rem;
+  }
+  .video-institucional {
+    width: 30rem;
+    height: 20rem;
   }
   .info-extra {
     flex-direction: column;
@@ -487,6 +490,43 @@ footer {
   }
   .recuadro p {
     font-size: 1.2rem;
+  }
+  span {
+    font-size: 1.5rem;
+  }
+  .titulosII {
+    font-size: 1.5rem;
+  }
+  .aranceles {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  table {
+    width: 100%;
+    justify-content: center;
+  }
+  th {
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(194, 194, 194);
+  }
+  thead {
+    display: none;
+  }
+  tr td:first-child {
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  tbody td {
+    display: block;
+    text-align: center;
+  }
+  .logos .texto-pie {
+    font-size: 1rem;
   }
 }
 
