@@ -79,11 +79,12 @@ a {
 }
 
 span {
-  font-size: rem;
+  font-size: 2.5rem;
   background-color: rgba(170, 204, 90, 0.937254902);
   border-radius: 2rem;
   color: rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 3px 3px white;
+  padding: 0.3rem 0.7rem 0.3rem 0.7rem;
 }
 
 .tabla {
@@ -93,6 +94,7 @@ span {
 
 /*Modificaciones Títulos*/
 .titulos {
+  padding: 0.3rem;
   font-size: 1.5rem;
 }
 
@@ -256,7 +258,7 @@ header nav ul li a {
   margin: 0.9rem;
 }
 .imagenes .imagenI:hover {
-  scale: 2;
+  scale: 1.75;
   transition: 1.5s;
   transition-delay: 0.3s;
 }
@@ -349,46 +351,13 @@ footer {
   .boton-nav a {
     font-size: 1.5rem;
   }
-}
-@media screen and (max-width: 1359px) {
-  .nav-original {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center !important;
-  }
-  .boton-nav a {
-    font-size: 2rem;
-  }
-}
-@media screen and (max-width: 991px) {
-  .boton-nav a {
-    font-size: 1.5rem;
-  }
   .boton-nav .boton-nav-desplegable .boton-nav-desplegado {
     font-size: 1.5rem;
-  }
-  .propuesta {
-    display: none;
-  }
-  .titulo-propuesta {
-    display: none;
-  }
-  .propuesta2 {
-    display: none;
-  }
-  .recuadro .tabla {
-    font-size: 1rem;
   }
 }
 @media screen and (max-width: 1500px) {
   .video {
     flex-direction: column;
-  }
-}
-@media screen and (max-width: 870px) {
-  .video-institucional {
-    width: 30rem;
-    height: 20rem;
   }
 }
 @media screen and (max-width: 1450px) {
@@ -404,6 +373,22 @@ footer {
   }
   .contactoII {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 1359px) {
+  .nav-original {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+  .boton-nav a {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .imagen {
+    width: 10rem;
+    height: 5rem;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -423,6 +408,35 @@ footer {
     display: none;
   }
 }
+@media screen and (max-width: 991px) {
+  .contenedor-logo-titulo {
+    text-align: center;
+  }
+  .boton-nav a {
+    font-size: 1.5rem;
+  }
+  .boton-nav .boton-nav-desplegable .boton-nav-desplegado {
+    font-size: 1.5rem;
+  }
+  .propuesta {
+    display: none;
+  }
+  .titulo-propuesta {
+    display: none;
+  }
+  .propuesta2 {
+    display: none;
+  }
+  .recuadro .tabla {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 870px) {
+  .video-institucional {
+    width: 30rem;
+    height: 20rem;
+  }
+}
 @media screen and (max-width: 870px) {
   #footer {
     display: flex;
@@ -430,7 +444,7 @@ footer {
     align-items: center;
   }
   .redesII {
-    flex-direction: row;
+    align-items: center;
   }
   .telefonos {
     flex-direction: row;
@@ -439,20 +453,14 @@ footer {
   .logos {
     margin: 0rem 2rem 0rem 2rem;
   }
-}
-@media screen and (max-width: 1280px) {
-  .imagen {
-    width: 10rem;
-    height: 5rem;
-  }
-}
-@media screen and (max-width: 870px) {
   .info-extra {
     flex-direction: column;
     align-items: center;
   }
   .info-extra .noticias {
     width: 100%;
+    height: 100%;
+    overflow-y: hidden;
   }
   .video {
     width: 100%;
@@ -460,20 +468,25 @@ footer {
   .video p {
     font-size: 1.5rem;
   }
-}
-@media screen and (max-width: 870px) {
   .imagenes {
     flex-wrap: wrap;
     justify-content: center;
   }
   .imagenes .imagenI:hover {
-    scale: 1.5;
+    scale: 1.3;
   }
-}
-@media screen and (max-width: 870px) {
   .video .video-institucional {
     width: 30rem;
     height: 20rem;
+  }
+  .negrita-form {
+    font-size: 1rem;
+  }
+  ::placeholder {
+    font-size: 1rem;
+  }
+  .recuadro p {
+    font-size: 1.2rem;
   }
 }
 
